@@ -1,4 +1,4 @@
-function trilingue(lingua, n) {
+/* function trilingue(lingua, n) {
     const mapa = new Map([
         [
             "eng",
@@ -53,4 +53,24 @@ function trilingue(lingua, n) {
     return mapa.get(lingua).get(n);
 }
 
-console.log(trilingue("eng", 3));
+console.log(trilingue("eng", 3)); */
+
+function numeroTrinlingue(n, lang) {
+    const langs = [
+        { eng: "zero", pt: "zero", fr: "zéro" },
+        { eng: "one", pt: "um", fr: "un" },
+        { eng: "two", pt: "dois", fr: "deux" },
+        { eng: "three", pt: "três", fr: "trois" },
+        { eng: "four", pt: "quatro", fr: "quatre" },
+        { eng: "five", pt: "cinco", fr: "cinc" },
+        { eng: "six", pt: "seis", fr: "six" },
+        { eng: "seven", pt: "sete", fr: "sept" },
+        { eng: "eight", pt: "oito", fr: "huit" },
+        { eng: "nine", pt: "nove", fr: "neuf" },
+        { eng: "ten", pt: "dez", fr: "dix" },
+    ];
+
+    return mapa[n][lang];
+}
+
+console.log(numeroTrinlingue(0, 'eng'))

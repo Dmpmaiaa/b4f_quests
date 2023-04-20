@@ -13,12 +13,17 @@
 
 function arrayDeZeroAN(n) {
     if(n === 0) return [0]
-    return [...arrayDeZeroAN(n - 1), n]
+    return [n, ...arrayDeZeroAN(n - 1)]
 }
 
-[ f(3)     ,4]
-[ 0, 1, 2,3]
-[ 0, 1,2]
-[  0,1]
+
+
+function contaPares(array){
+    
+    
+    
+}
+
+
 
 console.log(arrayDeZeroAN(4));

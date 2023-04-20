@@ -39,4 +39,8 @@ function diaDaSemanaPorExtensoBilingue(data, lingua){
 }
 
 
+
+
+
+
 console.log()
