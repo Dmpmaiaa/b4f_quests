@@ -1,4 +1,4 @@
-let myStringArray = ['Diogo', 'Andrezza']
+/* let myStringArray = ['Diogo', 'Andrezza']
 
 function reverseStringsInArray(array){
     if(array.length === 0){
@@ -16,9 +16,7 @@ function mapInvertedStrings(array) {
     return array.map((word) => reverseStringsInArray(word).join(''));
 }
 
-console.log(mapInvertedStrings(myStringArray));
-
-// let myNumbersArray = [4, 4, 6, 7, 8];
+console.log(mapInvertedStrings(myStringArray)); */
 
 // function stringsToLength(array) {
 //     return array.map((el) => el.length);
@@ -35,7 +33,6 @@ console.log(mapInvertedStrings(myStringArray));
 
 // console.log(sumOfTheOddPairs(myNumbersArray));
 
-
 // function returnEven(array) {
 //     return array.every((el) => el % 2 === 0);
 // }
@@ -48,10 +45,6 @@ console.log(mapInvertedStrings(myStringArray));
 
 // console.log(returnOneEven(myNumbersArray));
 
-// function occurencesMap(array) {
-//     return array.reduce((
-      
-// };
 //onsole.log(occurencesMap(myNumbersArray));
 // Cria uma função que mapeia cada elemento de um array de strings para o seu comprimento.
 
@@ -63,6 +56,5 @@ console.log(mapInvertedStrings(myStringArray));
 
 // Cria uma função que retorna true se pelo menos um dos elementos do array for par.
 
-// Cria uma função que reduz um array de números para um Map que tem como chaves os valores do array e como valores o número de ocorrências da chave. (mapa de ocOrrências)
 
 // Cria uma função que mapeia cada elemento de um array de objetos com as propriedades name e birthday para um objeto que além destas propriedades, tem a propriedade age.
