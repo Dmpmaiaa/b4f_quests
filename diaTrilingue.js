@@ -56,7 +56,8 @@
 console.log(trilingue("eng", 3)); */
 
 function numeroTrinlingue(n, lang) {
-    const langs = [
+    
+    const mapa = [
         { eng: "zero", pt: "zero", fr: "zéro" },
         { eng: "one", pt: "um", fr: "un" },
         { eng: "two", pt: "dois", fr: "deux" },

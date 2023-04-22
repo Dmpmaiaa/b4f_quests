@@ -13,7 +13,7 @@ function verificaPalindromo(string) {
         
     }
 
-   // return primeiraMetade.toLowerCase() === segundaMetade.toLowerCase()
+   return primeiraMetade.toLowerCase() === segundaMetade.toLowerCase()
 }
 
-console.log(verificaPalindromo('ANA'))
+console.log(verificaPalindromo('HELLO OLLEH'))
