@@ -9,7 +9,7 @@ function sopaDeLetras(array, string) {
         palavraVertical += linha[i][linha.length -1 + 1];
         
 ;
-}
+}}
 
 // return string === palavraHorizontal || string === palavraHorizontal;
 
@@ -22,4 +22,4 @@ console.log(
         ],
         "ola"
     )
-);
+)

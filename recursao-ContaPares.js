@@ -12,12 +12,3 @@ function contaPares(array){
 console.log(contaPares([1,2,3,4]))
 
 
-
-let = TeSTe
-return string.split('').map(el=> el === el.toLowerCase() ? el.toUpperCase() : el.toLowerCase()).join('')
-
-['T','e','S','T','e']
-
-T === T.toLowerCase() === false 
-
-tEs
