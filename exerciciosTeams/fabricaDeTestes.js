@@ -12,6 +12,8 @@ n é a quantidade total de testes e
 nome é o nome do primeiro teste que falhou. */
 ///
 
+
+
 class FabricaDeTestes {
   constructor(testes) {
     this.testes = testes;
