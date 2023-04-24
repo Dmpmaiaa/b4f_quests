@@ -8,6 +8,8 @@ const numbersArray = [
 ];
 
 function calculaModa(array) {
+
+  
   let maxFre = 0;
   let ocurrences = [];
   const mapa = array.reduce((mapaDeOcorrencias, elemento) => {
@@ -20,6 +22,7 @@ function calculaModa(array) {
       return new Map([...mapaDeOcorrencias, [elemento, 1]]);
     }
   }, new Map([]));
+
 
   for (let key of mapa.keys()) {
     if (mapa.get(key) > maxFre) {
