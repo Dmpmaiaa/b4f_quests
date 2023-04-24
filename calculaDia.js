@@ -53,14 +53,3 @@
 // ~ñ
 
 // console.log(contaNumeroDeDivisoesPorDois(2));
-function somatorioAteN(n){
-    let resulti = 0
-    let contador = 0
-    while(contador <= n){
-        resulti +=contador
-        contador ++
-    }
-    return resulti
-}
-
-console.log(somatorioAteN(2))
