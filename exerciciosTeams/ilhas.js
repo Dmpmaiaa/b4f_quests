@@ -22,7 +22,7 @@ function encontraIlhas(matriz) {
       if (matriz[linha][coluna] === 1) {     // se o elemento atual for 1
         contarUns += verificaUm(linha, coluna, matriz); // chama funçao recursiva para verificar ilhas de 1s
       } else if (matriz[linha][coluna] === 0) {
-        //contarZeros += verificaZero(linha, coluna, matriz);
+        contarZeros += verificaZero(linha, coluna, matriz);
       }
     }
   }
@@ -31,7 +31,7 @@ function encontraIlhas(matriz) {
 }
 
 function verificaUm(linha, coluna, matriz) {
-  let novaMatriz = [...matriz];
+let novaMatriz = JSON.parse(JSON.stringify(matriz))
 
   if (
     linha < 0 ||
@@ -58,7 +58,7 @@ function verificaUm(linha, coluna, matriz) {
 
 
 function verificaZero(linha, coluna, matriz) {
-  let novaMatriz = [...matriz];
+  let novaMatriz = JSON.parse(JSON.stringify(matriz));
   if (
     linha < 0 ||
     linha > matriz.length - 1 ||
@@ -81,3 +81,6 @@ function verificaZero(linha, coluna, matriz) {
 
 console.log(encontraIlhas(arquipelago));
 console.log(encontraIlhas(arquipelago2));
+
+
+// return de um dos numero, está ok ! quando tento contar os dois, return com resultado errado
