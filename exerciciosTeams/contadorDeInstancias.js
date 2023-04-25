@@ -6,12 +6,14 @@ uma propriedade estática instancias que tem o número de instâncias criadas at
 class ContadorDeInstancias{
     static instancias = 0
     constructor(){
-        this.instancia = ++ContadorDeInstancias.instancias
+        ++ContadorDeInstancias.instancias
     }
 }
 
 const novaInstancia = new ContadorDeInstancias()
 const novaInstancia2 = new ContadorDeInstancias()
 
-console.log(novaInstancia2.instancia);
+
+
+console.log(ContadorDeInstancias.instancias);
 
