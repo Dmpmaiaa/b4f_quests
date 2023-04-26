@@ -29,7 +29,7 @@ function encontraIlhas(matriz) {
             if (matriz[linha][coluna] === 1) {
                 // se o elemento atual for 1
                 console.log('CASA VISTAS : ' + casasVistas)
-                casasVistas += visitarIlhas(linha, coluna, matriz, 1); // chama funçao recursiva para verificar ilhas de 1s
+                casasVistas = [...casasVistas, visitarIlhas](linha, coluna, matriz, 1); // chama funçao recursiva para verificar ilhas de 1s
                 //verificaValor(linha, coluna, matriz, 1); // chama funçao recursiva para verificar ilhas de 1s
                          
               } else if (matriz[linha][coluna] === 0) {
@@ -63,7 +63,7 @@ function visitarIlhas(linha, coluna, matriz, valor) {
     visitarIlhas(linha, coluna + 1, novaMatriz); // numero da direita
     visitarIlhas(linha, coluna - 1, novaMatriz); // numero da esquerda
 
-    return 1;
+    return casasVistas;
 }
 
 
