@@ -1,16 +1,16 @@
 class Lista {
-    #inicio
+    #primeiro
     constructor(outroElemento) {
-        this.#inicio = outroElemento ? outroElemento : null
+        this.#primeiro = outroElemento ? outroElemento : null
     }
 
-    insereNoInicio(elemento) {
-        elemento.proximo = this.#inicio
-        this.#inicio = elemento
+    insereNoprimeiro(elemento) {
+        elemento.proximo = this.#primeiro
+        this.#primeiro = elemento
     }
 
-    get inicioDaLista() {
-        return this.#inicio
+    get primeiroDaLista() {
+        return this.#primeiro
     }
 }
 

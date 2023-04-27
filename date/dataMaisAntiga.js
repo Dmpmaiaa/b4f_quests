@@ -22,8 +22,10 @@ const datasEnunciado = [
 
 function dataMaisAntiga(array) {
     let myDatas = array
-        .map((el) => new Date(el).valueOf())
+        .map((el) => el.valueOf())
         .sort((a, b) => a - b)[0];
+
+        
     return new Date(myDatas);
 }
 
