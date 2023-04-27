@@ -7,10 +7,10 @@ let arquipelago = [
 
 
 let arquipelago2 = [
-    [1, 0, 1, 1],
-    [1, 1, 1, 0],
-    [0, 1, 1, 0],
-    [0, 0, 0, 0]
+    [0, 1, 1, 1],
+    [1, 1, 0, 0],
+    [0, 1, 1, 1],
+    [0, 0, 0, 1]
 ]
 
 console.table(arquipelago);
@@ -30,7 +30,7 @@ function encontraIlhas(matriz) {
           matriz,
           casasVisitadasZero,
           1
-        ) ? 1 : 0
+        ) 
 
       } else {
 
@@ -40,7 +40,7 @@ function encontraIlhas(matriz) {
             matriz,
             casasVisitadasUm,
             0
-          ) ? 1 : 0
+          ) 
       }
     }
   }
@@ -52,6 +52,7 @@ function encontraIlhas(matriz) {
 
 function visitarIlhas(linha, coluna, matriz, casasVisitadas, valor) {
   const pos = [linha, coluna].join("");
+
   if (
     linha < 0 ||
     linha > matriz.length - 1 ||
@@ -61,7 +62,7 @@ function visitarIlhas(linha, coluna, matriz, casasVisitadas, valor) {
     casasVisitadas.includes(pos)
   ) {
     
-    return ;
+    return 0;
   }
 
   casasVisitadas.push(pos);
@@ -75,4 +76,4 @@ function visitarIlhas(linha, coluna, matriz, casasVisitadas, valor) {
   return 1
 }
 
-console.log(encontraIlhas(arquipelago2));
+console.log(encontraIlhas(arquipelago));
