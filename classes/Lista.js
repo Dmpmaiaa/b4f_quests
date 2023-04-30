@@ -1,7 +1,7 @@
 class Lista {
     #primeiro
     constructor(outroElemento) {
-        this.#primeiro = outroElemento ? outroElemento : null
+        this.#primeiro = outroElemento ? outroElemento : undefined
     }
 
     insereNoprimeiro(elemento) {
