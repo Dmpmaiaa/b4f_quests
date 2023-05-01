@@ -1,46 +1,24 @@
-function diaDaSemanaPorExtensoBilingue(data, lingua){
-    // escreve aqui a função
-    let dia = data.getDay()
-    console.log(dia)
-    console.log(lingua)
+function diaDaSemanaPorExtensoBilingue(data, lingua) {
+  // escreve aqui a função
+  const dia = data.getDay();
+  const listaDias = [
+    { pt: "domingo", en: "sunday" },
+    { pt: "segunda-feira", en: "monday" },
+    { pt: "terça-feira", en: "tuesday" },
+    { pt: "quarta-feira", en: "wednesday" },
+    { pt: "quinta-feira", en: "thursday" },
+    { pt: "sexta-feira", en: "friday" },
+    { pt: "sábado", en: "saturday" },
+  ];
 
-    let diasPt = {
-        0: "segunda-feira",
-        1: "terça-feira",
-        2: "quarta-feira",
-        3: "quinta-feira",
-        4: "sexta-feira",
-        5: "sábado",
-        6: "domingo"
-    }
-
-    let diasEn = {
-        0: "monday",
-        1: "tuesday",
-        2: "wednesday",
-        3: "thursday",
-        4: "friday",
-        5: "saturday",
-        6: "sunday"
-    }
-
-    console.log(diasEn[dia])
-    console.log(diasPt[dia])
-
-    if(lingua === "pt"){
-        return diasPt[dia]
-    }
-    if(lingua === "en"){
-    return diasEn[dia]
-    }
-    else{
-        
-    }
+  return listaDias[dia][lingua];
 }
 
-
-
-
-
-
-console.log()
+console.log(
+  diaDaSemanaPorExtensoBilingue(
+    new Date(
+      "Mon Feb 08 1999 08:05:40 GMT+0100 (Central European Standard Time)"
+    ),
+    "en"
+  )
+);
