@@ -1,3 +1,3 @@
 function areaDoLosango(diagonalMaior, diagonalMenor){
-    return (diagonalMaior * diagonalMenor) / 2
+    return  (diagonalMaior * diagonalMenor) / 2
 }
