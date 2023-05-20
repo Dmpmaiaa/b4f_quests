@@ -1,0 +1,8 @@
+function calculaAreaSuperficiePiramidePentagonal(ladoBase, altura) {
+    const apotema = Math.sqrt(Math.pow(altura, 2) + Math.pow(ladoBase / (2 * Math.tan(Math.PI / 5)), 2));
+    const areaBase = (5 * Math.pow(ladoBase, 2)) / (4 * Math.tan(Math.PI / 5));
+    const areaFacesLaterais = (5 * ladoBase * apotema) / 2;
+    const areaTotal = areaBase + areaFacesLaterais;
+
+    return ladoBase <= 0 || altura <= 0 ?  'Por favor introduza valores positivos.' : Math.round(areaTotal)
+}
