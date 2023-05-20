@@ -1,7 +1,12 @@
+
+// Cria a função , que recebe como argumento um .
+// A função deve retornar um array em que cada posição do array deve ser o produto de todos os outros valores do array excluindo o próprio.
+
 function produtoExclusivo(array) {
-  return array.map((n, i) => {
-    return array.filter((el) => el != n).reduce((acc, c) => acc * c);
-  });
+    return array.map((_, i) => array.filter((_, indN) => indN !== i).reduce((acc, c) => acc * c))
+
+
 }
 
-console.log(produtoExclusivo([1, 3, 5, 6]));
+console.log(produtoExclusivo([9,8,7,6,5]))
+
