@@ -1,31 +1,12 @@
-function contaNumeroDeDivisoesPorDois(n){
-    let contador = 0
-    while(n>=2){
-        n=n/2
-        contador++
-    
-    }
-    return contador
-}
+function contaParesEntreDoisValores(valor1, valor2){
+    const max = Math.max(valor1, valor2)
+    const min = Math.min(valor1, valor2)
 
-console.log(contaNumeroDeDivisoesPorDois(9));
-
-
-function contaNumeroDeDivisoesPorDois(n){
     let contador = 0
-    while(n>=2){
-        n=n/2
-        contador++
-    
+
+    for(let i = min; i <= max; i++){
+        if(i % 2 === 0) contador ++
     }
-    return contador
-}
-function contaNumeroDeDivisoesPorDois(n){
-    let contador = 0
-    while(n>=2){
-        n=n/2
-        contador++
-    
-    }
-    return contador
+
+    return max === min ? '"Por favor introduza dois valores diferentes."' : contador
 }

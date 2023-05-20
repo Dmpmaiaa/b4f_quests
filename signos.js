@@ -1,4 +1,4 @@
-/* function signo(dia, mes) {
+function signo(dia, mes) {
 
     const mesesComTrinta = [1, 5, 9, 11 ]
 
@@ -52,7 +52,7 @@
     if ((mes == 2 && dia >= 19) || (mes == 3 && dia <= 20)) {
        return "Peixes"
     }
-} */
+}
 
 
 

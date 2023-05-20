@@ -1,5 +1,5 @@
 function horaPorExtenso(data) {
-  const horas = data.getUTCHours() + 2
+  const horas = data.getUTCHours() 
   const minutos = data.getMinutes();
 
   const horasExtenso = {
