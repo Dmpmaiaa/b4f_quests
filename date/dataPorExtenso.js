@@ -8,7 +8,7 @@ function dataPorExtenso(data){
     const ano = data.getFullYear()
     const diaSemana = data.getDay()
 
-    return `${diasDaSemana[diaSemana]}, ${dia} de ${meses[mes]}, de ${ano}` 
+    return `${diasDaSemana[diaSemana]}, ${dia} de ${meses[mes]} de ${ano}` 
 }
 
 console.log(dataPorExtenso(new Date()))

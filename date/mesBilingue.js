@@ -1,6 +1,6 @@
 function mesPorExtensoBilingue(data, lingua) {
   // escreve aqui a função
-  const month = data.getMonth() + 1
+  const month = data.getMonth()
   const monthList = [
     { pt: "Janeiro", en: "January" },
     { pt: "Fevereiro", en: "February" },
